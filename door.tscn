@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://cxnn656min2yk"]
+
+[ext_resource type="Script" path="res://door.gd" id="1_7pvsm"]
+[ext_resource type="Texture2D" uid="uid://c26jt8vf0bo4a" path="res://assets/level1walls3.png" id="2_hce3h"]
+[ext_resource type="Texture2D" uid="uid://dlpkct4oibrx" path="res://assets/level1walls1.png" id="3_t6siu"]
+[ext_resource type="Texture2D" uid="uid://dkk6yfax17ayy" path="res://assets/level1walls7.png" id="4_o1tat"]
+[ext_resource type="Texture2D" uid="uid://d1numuh2oshbr" path="res://assets/level1walls4.png" id="5_4fog8"]
+[ext_resource type="Texture2D" uid="uid://v7gttah5x0pb" path="res://assets/level1walls5.png" id="6_fpmuu"]
+[ext_resource type="Texture2D" uid="uid://3d40lr6q6yqx" path="res://assets/level1walls6.png" id="7_7o4kv"]
+[ext_resource type="Texture2D" uid="uid://dqm86dk5j0ug1" path="res://assets/level1walls2.png" id="8_kn7jj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4w85"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hce3h")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_t6siu")
+}],
+"loop": true,
+"name": &"locked",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_o1tat")
+}],
+"loop": true,
+"name": &"open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_4fog8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fpmuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7o4kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o1tat")
+}],
+"loop": true,
+"name": &"opening",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_kn7jj")
+}],
+"loop": true,
+"name": &"unlocked",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mps7r"]
+
+[node name="Door" type="Area2D"]
+script = ExtResource("1_7pvsm")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g4w85")
+animation = &"closed"
+autoplay = "locked"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_mps7r")

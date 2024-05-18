@@ -1,0 +1,397 @@
+[gd_scene load_steps=7 format=3 uid="uid://4mnh2w1xuhwq"]
+
+[ext_resource type="PackedScene" uid="uid://budfdjsiex56p" path="res://wall.tscn" id="1_lq0gj"]
+[ext_resource type="Texture2D" uid="uid://dv8j7f3xriktn" path="res://temptileset.png" id="2_ra1w1"]
+[ext_resource type="PackedScene" uid="uid://cxnn656min2yk" path="res://door.tscn" id="3_2ijd3"]
+[ext_resource type="PackedScene" uid="uid://cs73lrvbnchuf" path="res://enemy_medhat.tscn" id="4_wugjm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g24ib"]
+texture = ExtResource("2_ra1w1")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+13:12/0 = 0
+14:12/0 = 0
+15:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+12:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+13:15/0 = 0
+14:15/0 = 0
+15:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_wvapu"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_g24ib")
+
+[node name="Room001" type="Node2D"]
+
+[node name="Wall2" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(64, 64)
+wallPos = "topLeft"
+
+[node name="Wall4" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(192, 64)
+
+[node name="Wall47" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(320, 64)
+
+[node name="Wall49" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(448, 64)
+
+[node name="Wall53" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(704, 64)
+
+[node name="Wall55" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(832, 64)
+
+[node name="Wall56" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(960, 64)
+
+[node name="Wall15" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(192, 576)
+wallPos = "bot"
+
+[node name="Wall30" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(64, 576)
+wallPos = "botLeft"
+
+[node name="Wall17" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(320, 576)
+wallPos = "bot"
+
+[node name="Wall19" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(448, 576)
+wallPos = "bot"
+
+[node name="Wall23" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(704, 576)
+wallPos = "bot"
+
+[node name="Wall25" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(832, 576)
+wallPos = "bot"
+
+[node name="Wall27" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(960, 576)
+wallPos = "bot"
+
+[node name="Wall28" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(1088, 576)
+wallPos = "botRight"
+
+[node name="Wall7" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(64, 192)
+wallPos = "left"
+
+[node name="Wall11" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(64, 448)
+wallPos = "left"
+
+[node name="Wall40" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(1088, 192)
+wallPos = "right"
+
+[node name="Wall43" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(1088, 448)
+wallPos = "right"
+
+[node name="Wall13" parent="." instance=ExtResource("1_lq0gj")]
+z_index = -1
+position = Vector2(1088, 64)
+wallPos = "topRight"
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -1
+tile_set = SubResource("TileSet_wvapu")
+format = 2
+layer_0/tile_data = PackedInt32Array(327680, 196608, 3, 131074, 65536, 1, 196610, 65536, 2, 131075, 131072, 1, 196611, 131072, 2, 131076, 65536, 1, 196612, 65536, 2, 131077, 131072, 1, 196613, 131072, 2, 131078, 65536, 1, 196614, 65536, 2, 131079, 131072, 1, 196615, 131072, 2, 131080, 65536, 1, 196616, 65536, 2, 131081, 131072, 1, 196617, 131072, 2, 131082, 65536, 1, 196618, 65536, 2, 131083, 131072, 1, 196619, 131072, 2, 131084, 65536, 1, 196620, 65536, 2, 131085, 131072, 1, 196621, 131072, 2, 131086, 65536, 1, 196622, 65536, 2, 131087, 131072, 1, 196623, 131072, 2, 262158, 65536, 1, 327694, 65536, 2, 262159, 131072, 1, 327695, 131072, 2, 262156, 65536, 1, 327692, 65536, 2, 262157, 131072, 1, 327693, 131072, 2, 262154, 65536, 1, 327690, 65536, 2, 262155, 131072, 1, 327691, 131072, 2, 262152, 65536, 1, 327688, 65536, 2, 262153, 131072, 1, 327689, 131072, 2, 262150, 65536, 1, 327686, 65536, 2, 262151, 131072, 1, 327687, 131072, 2, 262148, 65536, 1, 327684, 65536, 2, 262149, 131072, 1, 327685, 131072, 2, 262146, 65536, 1, 327682, 65536, 2, 262147, 131072, 1, 327683, 131072, 2, 393230, 65536, 1, 458766, 65536, 2, 393231, 131072, 1, 458767, 131072, 2, 393228, 65536, 1, 458764, 65536, 2, 393229, 131072, 1, 458765, 131072, 2, 393226, 65536, 1, 458762, 65536, 2, 393227, 131072, 1, 458763, 131072, 2, 393224, 65536, 1, 458760, 65536, 2, 393225, 131072, 1, 458761, 131072, 2, 393222, 65536, 1, 458758, 65536, 2, 393223, 131072, 1, 458759, 131072, 2, 393220, 65536, 1, 458756, 65536, 2, 393221, 131072, 1, 458757, 131072, 2, 393218, 65536, 1, 458754, 65536, 2, 393219, 131072, 1, 458755, 131072, 2)
+
+[node name="Door" parent="." instance=ExtResource("3_2ijd3")]
+z_index = -1
+position = Vector2(576, 64)
+
+[node name="Door2" parent="." instance=ExtResource("3_2ijd3")]
+z_index = -1
+position = Vector2(1088, 320)
+roomPos = "right"
+
+[node name="Door3" parent="." instance=ExtResource("3_2ijd3")]
+z_index = -1
+position = Vector2(64, 320)
+roomPos = "left"
+
+[node name="Door4" parent="." instance=ExtResource("3_2ijd3")]
+z_index = -1
+position = Vector2(576, 576)
+roomPos = "bot"
+
+[node name="Node2D" parent="." instance=ExtResource("4_wugjm")]
+position = Vector2(184, 448)
+
+[node name="Node2D2" parent="." instance=ExtResource("4_wugjm")]
+position = Vector2(960, 184)

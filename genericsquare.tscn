@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://dn1o408ec80qq"]
+
+[ext_resource type="Script" path="res://genericsquare.gd" id="1_sowis"]
+[ext_resource type="Texture2D" uid="uid://dn71rqx648bn8" path="res://levelgensprite3.png" id="2_0hhnu"]
+[ext_resource type="Texture2D" uid="uid://b4hecoes0yen7" path="res://levelgensprite5.png" id="3_4uh68"]
+[ext_resource type="Texture2D" uid="uid://burkjfpkhjtyr" path="res://levelgensprite4.png" id="4_xkad3"]
+[ext_resource type="Texture2D" uid="uid://kxjnqesgc6wf" path="res://levelgensprite1.png" id="5_jd7ju"]
+[ext_resource type="Texture2D" uid="uid://bdrd3qad6b8nk" path="res://levelgensprite2.png" id="6_qxt2o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mepr1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0hhnu")
+}],
+"loop": true,
+"name": &"boss",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4uh68")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xkad3")
+}],
+"loop": true,
+"name": &"noise",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_jd7ju")
+}],
+"loop": true,
+"name": &"start",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_qxt2o")
+}],
+"loop": true,
+"name": &"treasure",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+z_index = 100
+script = ExtResource("1_sowis")
+
+[node name="Icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_mepr1")
+animation = &"start"
+autoplay = "default"

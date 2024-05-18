@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b07mynl5h653a"]
+
+[ext_resource type="Script" path="res://enemy_smallhat.gd" id="1_ii770"]
+[ext_resource type="Texture2D" uid="uid://surus48duj78" path="res://smallhat.png" id="1_us5ek"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_511mb"]
+radius = 32.0
+
+[node name="Node2D" type="CharacterBody2D" groups=["Enemies"]]
+motion_mode = 1
+script = ExtResource("1_ii770")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -14)
+texture = ExtResource("1_us5ek")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_511mb")

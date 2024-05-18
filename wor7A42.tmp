@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ywbk52mcg21d"]
+
+[ext_resource type="PackedScene" uid="uid://dpjahbyr4y1ba" path="res://player.tscn" id="1_4q4mk"]
+[ext_resource type="PackedScene" uid="uid://d14h0pv1cd7ls" path="res://level_generator.tscn" id="3_51g3o"]
+[ext_resource type="PackedScene" uid="uid://ci26uhui7i72e" path="res://enemy_broom.tscn" id="3_d3x2d"]
+
+[node name="world" type="Node2D"]
+
+[node name="EnemyBroom" parent="." instance=ExtResource("3_d3x2d")]
+position = Vector2(574, 246)
+
+[node name="EnemyBroom2" parent="." instance=ExtResource("3_d3x2d")]
+position = Vector2(811, 364)
+
+[node name="EnemyBroom3" parent="." instance=ExtResource("3_d3x2d")]
+position = Vector2(559, 508)
+
+[node name="Player" parent="." instance=ExtResource("1_4q4mk")]
+position = Vector2(349, 357)
+
+[node name="LevelGenerator" parent="." instance=ExtResource("3_51g3o")]
+position = Vector2(317, 131)

@@ -1,0 +1,5 @@
+Level up. You are now Level {Level}!
+- +1 Spell Speed
+	set {ShotSpd} = "ShotSpd + 1"
+- +1 Move Speed
+- +1 Damage

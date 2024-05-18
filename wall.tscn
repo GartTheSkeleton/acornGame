@@ -1,0 +1,93 @@
+[gd_scene load_steps=12 format=3 uid="uid://budfdjsiex56p"]
+
+[ext_resource type="Script" path="res://wall.gd" id="1_t7rsm"]
+[ext_resource type="Texture2D" uid="uid://cx3ocxun8ghi7" path="res://assets/level1walls15.png" id="2_cowri"]
+[ext_resource type="Texture2D" uid="uid://dnsa81kptdbcd" path="res://assets/level1walls17.png" id="3_11cbx"]
+[ext_resource type="Texture2D" uid="uid://kh43od2lmxao" path="res://assets/level1walls16.png" id="4_mg36i"]
+[ext_resource type="Texture2D" uid="uid://bl4svqgii5j6d" path="res://assets/level1walls14.png" id="5_ri6xt"]
+[ext_resource type="Texture2D" uid="uid://y72oy1rk116d" path="res://assets/level1walls18.png" id="6_q2mh2"]
+[ext_resource type="Texture2D" uid="uid://dr3nuibmsfehn" path="res://assets/level1walls13.png" id="7_hurbx"]
+[ext_resource type="Texture2D" uid="uid://r6bec1jft6w7" path="res://assets/level1walls19.png" id="8_yloj0"]
+[ext_resource type="Texture2D" uid="uid://b7t02nf5ahplt" path="res://assets/level1walls8.png" id="9_8ea5n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62r7j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sn63k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cowri")
+}],
+"loop": true,
+"name": &"botLeftCorner",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_11cbx")
+}],
+"loop": true,
+"name": &"botRightCorner",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mg36i")
+}],
+"loop": true,
+"name": &"botWall_01",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ri6xt")
+}],
+"loop": true,
+"name": &"leftWall_01",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_q2mh2")
+}],
+"loop": true,
+"name": &"rightWall_01",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_hurbx")
+}],
+"loop": true,
+"name": &"topLeftCorner",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_yloj0")
+}],
+"loop": true,
+"name": &"topRightCorner",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_8ea5n")
+}],
+"loop": true,
+"name": &"topWall_01",
+"speed": 5.0
+}]
+
+[node name="Wall" type="RigidBody2D" groups=["Wall"]]
+freeze = true
+script = ExtResource("1_t7rsm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_62r7j")
+
+[node name="mySprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sn63k")
+animation = &"botLeftCorner"
+autoplay = "topWall_01"
